@@ -1,0 +1,52 @@
+{
+  "welcome": "Welcome to our application",
+  "description": "This example shows how to use react-i18next to support Arabic.",
+  "change_language": "Change Language",
+  "nav": {
+    "hot_offers": "Hot Offers",
+    "gift_boxes": "Gift Boxes",
+    "about_us": "About Us",
+    "help": "Help",
+    "contact_us": "Contact Us / Customer Support",
+    "returns_refunds": "Returns & Refunds"
+  },
+  "header": {
+    "sign_in": "Sign in",
+    "register": "Register",
+    "profile": "Profile",
+    "notifications": "notifications",
+    "orders": "Orders",
+    "my_cart": "My cart",
+    "home": "Home",
+    "categories": "Categories",
+    "favorites": "Favorites",
+    "my_orders": "My orders",
+    "contact_us": "Contact us",
+    "about": "About",
+    "user_agreement": "User agreement",
+    "partnership": "Partnership",
+    "privacy_policy": "Privacy policy"
+  },
+  "home": {
+    "greeting": "Hi, {{name}}",
+    "get_started": "let's get started",
+    "guest": "user",
+    "join_now": "Join Now",
+    "log_in": "Log In",
+    "log_out": "Log Out",
+    "promo_discount": "Get US $10 off with a new supplier",
+    "promo_quotes": "Send quotes with supplier preferences",
+    "latest_trending": "Latest trending",
+    "electronic_items": "Electronic items"
+  },
+  "categories": {
+    "automobiles": "Automobiles",
+    "Clothes-and-wear": "Clothes and wear",
+    "Home-interiors": "Home interiors",
+    "Computer-and-tech": "Computer and tech",
+    "tools-equipments": "Tools, equipments",
+    "Sports-and-outdoor": "Sports and outdoor",
+    "Animal-and-pets": "Animal and pets",
+    "Machinery-tools": "Machinery tools"
+  }
+}

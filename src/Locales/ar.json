@@ -1,0 +1,52 @@
+{
+  "welcome": "أهلاً بك في تطبيقنا",
+  "description": "هذا المثال يوضح كيفية استخدام react-i18next لدعم اللغة العربية.",
+  "change_language": "تغيير اللغة",
+  "nav": {
+    "hot_offers": "العروض الساخنة",
+    "gift_boxes": "صناديق الهدايا",
+    "about_us": "من نحن",
+    "help": "المساعدة",
+    "contact_us": "تواصل معنا / الدعم الفني",
+    "returns_refunds": "الإرجاع والاسترداد"
+  },
+  "header": {
+    "sign_in": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "profile": "الملف الشخصي",
+    "notifications": "الإشعارات",
+    "orders": "الطلبات",
+    "my_cart": "سلتي",
+    "home": "الرئيسية",
+    "categories": "الأقسام",
+    "favorites": "المفضلة",
+    "my_orders": "طلباتي",
+    "contact_us": "تواصل معنا",
+    "about": "من نحن",
+    "user_agreement": "اتفاقية المستخدم",
+    "partnership": "الشراكة",
+    "privacy_policy": "سياسة الخصوصية"
+  },
+  "home": {
+    "greeting": "مرحباً، {{name}}",
+    "get_started": "لنبدأ معاً",
+    "guest": "ضيف",
+    "join_now": "انضم الآن",
+    "log_in": "تسجيل الدخول",
+    "log_out": "تسجيل الخروج",
+    "promo_discount": "احصل على خصم 10 دولارات أمريكية مع مورّد جديد",
+    "promo_quotes": "أرسل عروض الأسعار مع تفضيلات المورّد",
+    "latest_trending": "الأكثر رواجاً حديثاً",
+    "electronic_items": "المنتجات الإلكترونية"
+  },
+  "categories": {
+  "automobiles": "السيارات",
+  "Clothes-and-wear": "الملابس والأزياء",
+  "Home-interiors": "ديكور المنزل",
+  "Computer-and-tech": "الكمبيوتر والتقنية",
+  "tools-equipments": "الأدوات والمعدات",
+  "Sports-and-outdoor": "الرياضة والأنشطة الخارجية",
+  "Animal-and-pets": "الحيوانات الأليفة",
+  "Machinery-tools": "الآلات والمعدات الثقيلة"
+}
+}

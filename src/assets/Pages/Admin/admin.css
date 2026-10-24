@@ -1,0 +1,201 @@
+
+.adm-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr);
+}
+
+.adm-side {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 14px;
+  background: var(--bs-body-bg);
+  border-inline-end: 1px solid var(--bs-border-color);
+}
+
+.adm-brand {
+  padding: 0 12px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.adm-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.adm-nav a,
+.adm-side__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--bs-body-color);
+  font: inherit;
+  font-weight: 500;
+  text-align: start;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.adm-nav a:hover,
+.adm-side__link:hover {
+  background: var(--bs-tertiary-bg);
+}
+
+.adm-nav a.active {
+  background: color-mix(in srgb, var(--primary-color) 12%, transparent);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.adm-side__foot {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 16px;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.adm-main {
+  min-width: 0;
+  padding: 28px clamp(16px, 3vw, 40px) 48px;
+}
+
+.adm-nav a:focus-visible,
+.adm-side__link:focus-visible,
+.adm-icon-btn:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.adm-card {
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 10px;
+}
+
+.adm-title-icon {
+  color: var(--primary-color);
+}
+
+.adm-table {
+  --bs-table-bg: transparent;
+}
+.adm-table th {
+  padding: 14px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--bs-secondary-color);
+  white-space: nowrap;
+}
+.adm-table td {
+  padding: 12px 16px;
+}
+
+.adm-icon-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-inline-start: 4px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--bs-secondary-color);
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.adm-icon-btn:hover {
+  background: var(--bs-tertiary-bg);
+  color: var(--bs-body-color);
+}
+.adm-icon-btn--danger:hover {
+  background: color-mix(in srgb, var(--bs-danger) 12%, transparent);
+  color: var(--bs-danger);
+}
+
+.btn.adm-btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d92a52;
+  --bs-btn-hover-border-color: #d92a52;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #c0254a;
+  --bs-btn-active-border-color: #c0254a;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--primary-color);
+  --bs-btn-disabled-border-color: var(--primary-color);
+}
+
+.adm-pagination {
+  --bs-pagination-color: var(--primary-color);
+  --bs-pagination-hover-color: var(--primary-color);
+  --bs-pagination-focus-color: var(--primary-color);
+  --bs-pagination-active-bg: var(--primary-color);
+  --bs-pagination-active-border-color: var(--primary-color);
+}
+
+.adm-login {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
+.adm-login__card {
+  width: min(100%, 400px);
+  padding: 32px;
+}
+.adm-login__title {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .adm-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .adm-side {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-inline-end: 0;
+    border-bottom: 1px solid var(--bs-border-color);
+    overflow-x: auto;
+  }
+  .adm-brand {
+    display: none;
+  }
+  .adm-nav {
+    flex-direction: row;
+  }
+  .adm-nav a,
+  .adm-side__link {
+    white-space: nowrap;
+  }
+  .adm-side__foot {
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+  .adm-side__link span {
+    display: none;
+  }
+}
