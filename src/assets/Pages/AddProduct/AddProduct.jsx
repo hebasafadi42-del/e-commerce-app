@@ -21,7 +21,7 @@ import { API_Config } from "../../Config/API-Config";
 
 const PRODUCT_URL = `${API_Config.Base_URL}/product`;
 const CATEGORY_URL = `${API_Config.Base_URL}/category`;
-const MAX_IMAGE_SIZE = 2 * 1024 * 1024; 
+const MAX_IMAGE_SIZE = 2 * 1024 * 1024;
 
 const EMPTY_FORM = {
   name: "",
@@ -186,7 +186,7 @@ const AddProduct = () => {
                       alt="Product preview"
                       rounded
                       fluid
-                      className="w-100 object-fit-cover bg-light rounded-4"
+                      className="w-100 object-fit-cover preview-img rounded-4"
                       style={{ aspectRatio: "1 / 1" }}
                     />
                     <Button
@@ -203,11 +203,8 @@ const AddProduct = () => {
                   <Card
                     role="button"
                     tabIndex={0}
-                    className="bg-light text-center rounded-4 w-100"
-                    style={{
-                      aspectRatio: "1 / 1",
-                      border: "2px dashed #dda3b0",
-                    }}
+                    className="upload-box text-center rounded-4 w-100"
+                    style={{ aspectRatio: "1 / 1" }}
                     onClick={() => fileInputRef.current?.click()}
                     onKeyDown={(e) =>
                       (e.key === "Enter" || e.key === " ") &&
@@ -255,7 +252,7 @@ const AddProduct = () => {
                     <Form.Group controlId="productName">
                       <Form.Label className="fw-semibold small">Name</Form.Label>
                       <Form.Control
-                        className="bg-light border-0 py-3 rounded-3"
+                        className="input-bgcolor border-0 py-3 rounded-3"
                         type="text"
                         value={form.name}
                         onChange={set("name")}
@@ -269,7 +266,7 @@ const AddProduct = () => {
                       <Form.Label className="fw-semibold small">Price</Form.Label>
                       <InputGroup>
                         <Form.Control
-                          className="bg-light border-0 py-3 rounded-start-3"
+                          className="input-bgcolor border-0 py-3 rounded-start-3"
                           type="number"
                           min="0"
                           step="0.01"
@@ -277,7 +274,7 @@ const AddProduct = () => {
                           onChange={set("price")}
                           required
                         />
-                        <InputGroup.Text className="bg-light border-0 text-muted rounded-end-3">
+                        <InputGroup.Text className="input-bgcolor border-0 text-muted rounded-end-3">
                           AED
                         </InputGroup.Text>
                       </InputGroup>
@@ -290,7 +287,7 @@ const AddProduct = () => {
                         Category
                       </Form.Label>
                       <Form.Select
-                        className="bg-light border-0 py-3 rounded-3"
+                        className="input-bgcolor border-0 py-3 rounded-3"
                         value={form.category_id}
                         onChange={set("category_id")}
                         disabled={loadingCategories}
@@ -316,7 +313,7 @@ const AddProduct = () => {
                       <Form.Control
                         as="textarea"
                         rows={5}
-                        className="bg-light border-0 rounded-3"
+                        className="input-bgcolor border-0 rounded-3"
                         value={form.description}
                         onChange={set("description")}
                       />
@@ -371,7 +368,7 @@ const AddProduct = () => {
           delay={4000}
           autohide
           bg="warning"
-          className="border-0 shadow"
+          className="text-dark border-0 shadow"
         >
           <Toast.Body className="d-flex justify-content-between align-items-center small py-2 px-3">
             <span>{errorMsg}</span>

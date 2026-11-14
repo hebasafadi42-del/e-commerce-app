@@ -16,7 +16,7 @@ body {
 }
 
 [data-bs-theme="dark"] body {
-  background-color: #2e2c2cf7;
+  background-color: #212529;
   color: #f1f1f1a0 !important;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 [data-bs-theme="dark"] .backGroung-white {
-  background-color: #3a3a3af4;
+  background-color: #2e3439fa;
   border: #434242;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 [data-bs-theme="dark"] .bgcolor {
-  background-color: #434242;
+  background-color: #33393f;
 }
 
 [data-bs-theme="dark"] .text-dark-light {
@@ -403,7 +403,7 @@ a {
 }
 [data-bs-theme="dark"] .co-layout-right {
   
-  background: #414040f0;
+  background: #3c4348fa;
   color: #b9b7b7;
 }
 
@@ -722,6 +722,57 @@ a {
 }
 .search-category{
   max-width: 40%;
+}
+
+
+/* ====== AddProduct – dark mode ====== */
+
+/* الحقول: Name / Price / Category / Description + نص AED */
+.form-control.input-bgcolor,
+.form-select.input-bgcolor,
+.input-group-text.input-bgcolor {
+  background-color: #F9F9F9;
+}
+
+[data-bs-theme="dark"] .form-control.input-bgcolor,
+[data-bs-theme="dark"] .form-select.input-bgcolor,
+[data-bs-theme="dark"] .input-group-text.input-bgcolor {
+  background-color: #bfd5eb27;
+  color: #f1f1f1;
+}
+
+[data-bs-theme="dark"] .input-bgcolor::placeholder {
+  color: #f1f1f1a0;
+}
+
+/* خيارات القائمة المنسدلة */
+[data-bs-theme="dark"] .form-select.input-bgcolor option {
+  background-color: #2e3439;
+  color: #f1f1f1;
+}
+
+/* صندوق رفع الصورة */
+.upload-box {
+  background-color: #F9F9F9;
+  border: 2px dashed #dda3b0;
+}
+
+[data-bs-theme="dark"] .upload-box {
+  background-color: #bfd5eb27;
+  border-color: #dda3b0a0;
+}
+
+[data-bs-theme="dark"] .upload-box .text-body {
+  color: #f1f1f1 !important;
+}
+
+/* الصورة المعاينة */
+.preview-img {
+  background-color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .preview-img {
+  background-color: #bfd5eb27;
 }
 
 

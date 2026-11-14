@@ -7,9 +7,9 @@ const ProfileLayout = ({ children }) => {
     <>
       <WepNavbar/>
       <Container>
-        <Row style={{marginTop:"8%"}} className=' backGroung-white rounded-2'>
+        <Row style={{marginTop:"8%"}} className='mb-5 backGroung-white rounded-2'>
           
-          <Col lg={12} className='p-0'>
+          <Col lg={12} className='p-0 '>
           {children}
           </Col>
         </Row>
